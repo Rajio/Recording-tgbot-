@@ -1,10 +1,9 @@
 import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
-from database import init_db, add_appointment, check_appointment_exists, get_free_slots
+from bot.database import init_db, add_appointment, check_appointment_exists, get_free_slots
 from datetime import datetime, timedelta
-
-API_TOKEN = '7396155889:AAEgkN_fb0gtAPgTBBMOmW3b3sfdW6kt0fg'
+from Api import API_TOKEN
 
 logging.basicConfig(level=logging.INFO)
 
