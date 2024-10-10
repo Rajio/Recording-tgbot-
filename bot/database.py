@@ -1,3 +1,4 @@
+# не робоча частина
 import sqlite3
 from datetime import datetime, timedelta
 
